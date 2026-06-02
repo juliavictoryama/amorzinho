@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para o Meu Amor ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ffe5ec,#fff0f3);
+    color:#444;
+    overflow-x:hidden;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+h1{
+    font-size:3rem;
+    color:#ff4d6d;
+}
+
+.subtitle{
+    margin-top:15px;
+    font-size:1.2rem;
+    max-width:700px;
+}
+
+.heart{
+    position:fixed;
+    font-size:20px;
+    pointer-events:none;
+    animation:float 4s linear forwards;
+}
+
+@keyframes float{
+    from{
+        opacity:1;
+        transform:translateY(0);
+    }
+    to{
+        opacity:0;
+        transform:translateY(-150px);
+    }
+}
+
+section{
+    padding:70px 20px;
+}
+
+.section-title{
+    text-align:center;
+    color:#ff4d6d;
+    margin-bottom:40px;
+    font-size:2rem;
+}
+
+.story{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+}
+
+.counter{
+    text-align:center;
+    font-size:1.5rem;
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    max-width:700px;
+    margin:auto;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.photo-card{
+    background:white;
+    padding:10px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.photo-card:hover{
+    transform:scale(1.05) rotate(1deg);
+}
+
+.photo-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.caption{
+    text-align:center;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+.reasons{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.reason{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.letter{
+    max-width:800px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    line-height:1.8;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.surprise{
+    text-align:center;
+}
+
+button{
+    border:none;
+    background:#ff4d6d;
+    color:white;
+    padding:15px 30px;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:1rem;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+.hidden-message{
+    display:none;
+    margin-top:25px;
+    font-size:1.4rem;
+    color:#ff4d6d;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#666;
+}
+
+.fade{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Para o meu Amor ❤️</h1>
+    <p class="subtitle">
+        Espero que consiga demonstrar o quanto você é importante para mim. 
+    </p>
+</header>
+
+<section class="fade">
+    <h2 class="section-title">Nosso Tempo Juntos</h2>
+    <div class="counter" id="contador"></div>
+</section>
+
+<section class="fade">
+    <div class="story">
+        Cada momento ao seu lado se tornou uma lembrança especial.
+        Entre risadas, conversas, sonhos e planos, construímos algo
+        que faz meus dias mais felizes.
+    </div>
+</section>
+
+<section class="fade">
+    <h2 class="section-title">Galeria de Memórias</h2>
+
+    <div class="gallery">
+
+        <div class="photo-card">
+            <img src="https://i.postimg.cc/BZB958xz/81cbb734-a08c-4ca1-9575-7c036c21a39e.jpg">
+            <div class="caption">Nossa primeira foto juntos</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="https://i.postimg.cc/Y2zKN41d/IMG-8172.jpg">
+            <div class="caption">Tentando parecer normais</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="https://i.postimg.cc/c1By7KQk/IMG-8075.jpg">
+            <div class="caption">Meu sorriso favorito</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="https://i.postimg.cc/VsWQ9SjH/IMG-7949.jpg">
+            <div class="caption">Colecionando momentos</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="https://i.postimg.cc/L64dxHDS/IMG-8156.jpg">
+            <div class="caption">Ao seu lado tudo fica melhor</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="https://i.postimg.cc/D0g97Dv0/IMG-8406.jpg">
+            <div class="caption">Você e eu ❤️</div>
+        </div>
+
+    </div>
+</section>
+
+<section class="fade">
+    <h2 class="section-title">10 Coisas Que Amo em Você</h2>
+
+    <div class="reasons">
+        <div class="reason">Seu carinho</div>
+        <div class="reason">Sua paciência</div>
+        <div class="reason">Seu sorriso</div>
+        <div class="reason">Seu gosto por carros</div>
+        <div class="reason">Seu humor</div>
+        <div class="reason">Sua inteligência</div>
+        <div class="reason">Seu coração</div>
+        <div class="reason">Seu companheirismo</div>
+        <div class="reason">Seu jeito de cuidar de mim</div>
+        <div class="reason">Porque é você</div>
+    </div>
+</section>
+
+<section class="fade">
+    <h2 class="section-title">Uma Carta Para Você</h2>
+
+    <div class="letter">
+    <h3 style="color:#ff4d6d; margin-bottom:20px;">
+        Para o meu Amor ❤️
+    </h3>
+
+    <p>
+        Amor,
+    </p>
+
+    <br>
+
+    <p>
+        Eu nunca imaginei encontrar alguém como você.
+        Desde o começo senti medo, insegurança e dúvidas que eu carregava há muito tempo.
+        Eu tinha receio de me entregar, receio de não ser suficiente e medo de que as coisas dessem errado.
+    </p>
+
+    <br>
+
+    <p>
+        Mas você foi capaz de mudar tudo isso.
+        Com sua paciência, seu carinho e sua forma tão leve de me amar,
+        você me mostrou que eu não precisava viver sempre esperando o pior.
+        Você me fez sentir segura, acolhida e amada de uma maneira que eu nunca tinha experimentado antes.
+    </p>
+
+    <br>
+
+    <p>
+        Aos poucos você se tornou meu lugar favorito.
+        A pessoa para quem eu quero contar sobre o meu dia,
+        compartilhar minhas conquistas,
+        dividir meus medos e celebrar minhas alegrias.
+        Você transformou momentos simples em memórias que eu quero guardar para sempre.
+    </p>
+
+    <br>
+
+    <p>
+        Obrigada por cada conversa,
+        por cada abraço,
+        por cada vez que você segurou minha mão quando eu precisei.
+        Obrigada por me mostrar que o amor pode ser tranquilo,
+        seguro e cheio de cumplicidade.
+    </p>
+
+    <br>
+
+    <p>
+        Eu amo seu sorriso,
+        amo sua inteligência,
+        amo seu jeito de cuidar de mim,
+        amo o quanto você se esforça pelas pessoas que ama
+        e amo a pessoa incrível que você é.
+    </p>
+
+    <br>
+
+    <p>
+        Se eu pudesse escolher alguém para dividir meus dias,
+        minhas histórias e meus sonhos,
+        eu escolheria você todas as vezes.
+    </p>
+
+    <br>
+
+    <p>
+        Te amo mais do que qualquer página, foto ou texto conseguiria explicar.
+    </p>
+
+    <br>
+
+    <p>
+        Com todo o meu amor,
+        <br>
+        Júlia ❤️
+    </p>
+</div>
+</section>
+
+<section class="fade">
+    <h2 class="section-title">Mensagem Surpresa</h2>
+
+    <div class="surprise">
+        <button onclick="mostrarMensagem()">
+            NÃO CLIQUE AQUI
+        </button>
+
+        <div class="hidden-message" id="mensagem">
+            Eu te amo mais do que qualquer página conseguiria explicar ❤️ Feliz 5 meses meu amor!!
+        </div>
+    </div>
+</section>
+
+<footer>
+    Feito com amor por Júlia para Eduardo ❤️
+</footer>
+
+<script>
+
+// DATA DE INÍCIO DO RELACIONAMENTO
+const dataNamoro = new Date("2026-01-02");
+
+function atualizarContador(){
+
+    const agora = new Date();
+
+    let diff = agora - dataNamoro;
+
+    let dias = Math.floor(diff / (1000*60*60*24));
+
+    document.getElementById("contador").innerHTML =
+        `Estamos construindo memórias há <strong>${dias}</strong> dias ❤️`;
+}
+
+setInterval(atualizarContador,1000);
+atualizarContador();
+
+function mostrarMensagem(){
+    document.getElementById("mensagem").style.display="block";
+    criarExplosaoCoracoes();
+}
+
+function criarExplosaoCoracoes(){
+
+    for(let i=0;i<30;i++){
+
+        let heart=document.createElement("div");
+
+        heart.classList.add("heart");
+        heart.innerHTML="❤️";
+
+        heart.style.left=Math.random()*100+"vw";
+        heart.style.top=Math.random()*100+"vh";
+
+        document.body.appendChild(heart);
+
+        setTimeout(()=>{
+            heart.remove();
+        },4000);
+    }
+}
+
+document.addEventListener("mousemove",(e)=>{
+
+    if(Math.random()>0.92){
+
+        let heart=document.createElement("div");
+
+        heart.classList.add("heart");
+        heart.innerHTML="❤️";
+
+        heart.style.left=e.clientX+"px";
+        heart.style.top=e.clientY+"px";
+
+        document.body.appendChild(heart);
+
+        setTimeout(()=>{
+            heart.remove();
+        },4000);
+    }
+});
+
+const observer = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+document.querySelectorAll(".fade").forEach(el=>{
+    observer.observe(el);
+});
+
+</script>
+
+</body>
+</html>
